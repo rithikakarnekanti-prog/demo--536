@@ -1,0 +1,10 @@
+body, .container { font-family: Arial, sans-serif; text-align: center; }
+.container { margin-top: 100px; }
+input, select, button { display: block; margin: 10px auto; padding: 10px; width: 80%; }
+button { background-color: #28a745; color: white; cursor: pointer; }
+Javascript code File-name: script.js
+document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    document.getElementById('successMessage').style.display = 'block';
+    this.reset();
+});
